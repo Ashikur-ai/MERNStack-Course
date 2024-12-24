@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image scales proportionally without distortion */
+  z-index: 0;
+  /* Ensure it's below the overlay */
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+  /* Ensure the overlay is above the image */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  /* Ensure the text is above the overlay */
+  color: white;
+  /* Make the text visible on the dark background */
+}
+
+.banner-text h1 {
+  font-size: 72px;
+  /* Adjust text size as needed */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  width: 30%;
+  margin: 0;
+}
+
+/* navbar related api  */
+
+.navbar-container {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  color: white;
+  padding: 20px 0px;
+
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navlink {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.login-btn {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-btn button {
+  background-color: #23a6f0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn1 {
+  background-color: #23a6f0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn2 {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.point-section {
+  background-color: #252b42;
+}
+
+.key-card img {
+  width: 80px;
+}
+
+.key-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.key-points {
+  display: flex;
+  width: 80%;
+  gap: 30px;
+  color: white;
+  margin: auto;
+  padding: 100px 0;
+}
+
+/* testimonial related css  */
+
+.testimonial-holder {
+  background-color: #8ec2f2;
+  padding: 50px 0px;
+}
+
+.testimonial-heading {
+  text-align: center;
+  color: white;
+}
+
+.testi-card {
+  background-color: white;
+  padding: 30px;
+}
+
+.testimonials {
+
+  margin: 100px 0;
+  display: flex;
+  gap: 150px;
+}
+
+.test-section {
+  width: 80%;
+  margin: auto;
+}
+
+.testimonial2-holder {
+  background-color: #252b42;
+  padding: 150px 0px;
+}
+
+.testimonials2 {
+
+  margin: 100px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.test-section2 {
+  width: 95%;
+  margin: auto;
+}
+
+
+
+/* pricing  */
+.price-holder {
+  background-color: #252b42;
+}
+
+.price {
+
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.price-section {
+  width: 90%;
+  margin: auto;
+}
+
+.contact-holder {
+  position: relative;
+  width: 100%;
+}
+
+.contact {
+  position: relative;
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.contact img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Optional overlay for contrast */
+  z-index: 1;
+}
+
+.contact-text {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: black;
+}
+
+.inputt{
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.form-row{
+  display: flex;
+  gap: 30px;
+}
+
+.form-input{
+  margin-left: 10px;
+}
+
+textarea{
+  margin-top: 10px;
+}
+
+.consult{
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 0;
+}
+
+.footer{
+  color: white;
+  background-color: #252b42;
+}
+
+.footer-holder{
+  width: 80%;
+  padding: 40px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
